@@ -7,45 +7,58 @@
     tools:context="com.example.beka.loggin.MainActivity">
 
     <RelativeLayout
-        android:layout_width="368dp"
-        android:layout_height="495dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="8dp">
+        android:layout_width="414dp"
+        android:layout_height="605dp"
+        android:background="@drawable/fon"
+        tools:ignore="MissingConstraints,RtlHardcoded"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="-3dp"
+        android:layout_marginRight="-1dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteX="-3dp">
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/edit_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="136dp"
+            android:layout_marginBottom="19dp"
+            android:elegantTextHeight="false"
             android:ems="10"
+            android:freezesText="true"
             android:inputType="textEmailAddress"
-            android:text="Email" />
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:textColorHint="@android:color/background_light"
+            android:textIsSelectable="false"
+            android:textStyle="italic"
+            tools:ignore="LabelFor"
+            android:layout_above="@+id/edit_pass"
+            android:layout_alignStart="@+id/edit_pass" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/edit_pass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/editText"
-            android:layout_below="@+id/editText"
-            android:layout_marginTop="48dp"
-            android:contentDescription="Password"
+            android:layout_marginBottom="30dp"
             android:ems="10"
             android:inputType="textPassword"
-            android:text="Password"
-            tools:text="Password" />
+            tools:ignore="LabelFor"
+            android:layout_above="@+id/log1"
+            android:layout_centerHorizontal="true" />
 
         <Button
             android:id="@+id/log1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="67dp"
             android:background="@color/colorAccent"
             android:onClick="onClick"
-            android:text="LOGIN"
-            android:layout_marginTop="62dp"
-            android:layout_below="@+id/editText2"
-            android:layout_centerHorizontal="true" />
+            android:text="@string/login"
+            android:textColor="#ffffff"
+            android:layout_marginStart="37dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/edit_pass" />
+
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

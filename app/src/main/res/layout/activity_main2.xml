@@ -4,41 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.beka.loggin.Main2Activity">
+    tools:context="com.example.beka.loggin.Main2Activity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
 
     <RelativeLayout
-        android:layout_width="373dp"
-        android:layout_height="518dp"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="-4dp">
+        android:layout_width="415dp"
+        android:layout_height="603dp"
+        android:layout_marginRight="1dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="MissingConstraints,RtlHardcoded,UselessLeaf"
+        tools:layout_editor_absoluteY="-2dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:layout_editor_absoluteX="-2dp">
 
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="81dp"
-            android:layout_height="68dp"
-            android:layout_column="0"
-            android:layout_row="8"
-            android:adjustViewBounds="false"
-            android:backgroundTint="@android:color/holo_green_light"
-            android:baselineAlignBottom="false"
-            android:cropToPadding="false"
-            android:elevation="4dp"
-            android:foregroundGravity="fill"
-            android:scaleType="centerCrop"
-            android:src="@drawable/settings"
-            app:srcCompat="?android:attr/colorButtonNormal"
-            tools:layout_editor_absoluteX="47dp"
-            tools:layout_editor_absoluteY="78dp"
-            tools:layout_goneMarginBottom="15dp"
-            android:layout_below="@+id/textClock3"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="29dp"
-            android:layout_marginTop="64dp" />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:contentDescription=""
+            android:scaleType="matrix"
+            app:srcCompat="@drawable/menu"
+            tools:ignore="ContentDescription,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-143dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:contentDescription=""
+            app:srcCompat="@drawable/gory"
+            tools:ignore="ContentDescription,UnknownIdInLayout"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_alignStart="@+id/iB" />
 
         <TextClock
-            android:id="@+id/textClock3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:id="@+id/textClock2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/imageView4"
+            android:layout_marginStart="47dp"
+            android:layout_toEndOf="@+id/imageView4" />
+
+        <ImageButton
+            android:id="@+id/iB"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="24dp"
+            android:contentDescription=""
+            android:onClick="onClick"
+            app:srcCompat="@drawable/config"
+            tools:ignore="ContentDescription"
+            android:layout_below="@+id/imageView2"
+            android:layout_alignParentStart="true" />
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/iB"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/white" />
 
     </RelativeLayout>
+
+
+
 </android.support.constraint.ConstraintLayout>

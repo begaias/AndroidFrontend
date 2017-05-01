@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Raspisanie</string>
+    <string name="login">login</string>
+    <string name="condition">condition</string>
+    <string name="off">off</string>
+    <string name="onparameter">onParameter</string>
+    <string name="physik">physik</string>
+    <string name="offParameter">Off</string>
+    <string name="onParameter">On</string>
 </resources>

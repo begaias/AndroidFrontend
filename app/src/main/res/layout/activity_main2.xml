@@ -8,63 +8,54 @@
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
-
     <RelativeLayout
         android:layout_width="415dp"
         android:layout_height="603dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginRight="1dp"
         android:background="@android:color/darker_gray"
+        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         tools:ignore="MissingConstraints,RtlHardcoded,UselessLeaf"
-        tools:layout_editor_absoluteY="-2dp"
-        android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        tools:layout_editor_absoluteX="-2dp">
+        tools:layout_editor_absoluteY="0dp">
 
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
             android:contentDescription=""
             android:scaleType="matrix"
             app:srcCompat="@drawable/menu"
             tools:ignore="ContentDescription,MissingConstraints"
             tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="-143dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true" />
+            tools:layout_editor_absoluteY="-143dp" />
 
 
         <ImageView
             android:id="@+id/imageView4"
             android:layout_width="95dp"
             android:layout_height="95dp"
+            android:layout_above="@+id/iB"
+            android:layout_alignEnd="@+id/iB"
             android:contentDescription=""
             app:srcCompat="@drawable/gory"
-            tools:ignore="ContentDescription,UnknownIdInLayout"
-            android:layout_alignBottom="@+id/imageView2"
-            android:layout_alignStart="@+id/iB" />
-
-        <TextClock
-            android:id="@+id/textClock2"
-            android:layout_width="100dp"
-            android:layout_height="60dp"
-            android:layout_alignBottom="@+id/imageView4"
-            android:layout_marginStart="47dp"
-            android:layout_toEndOf="@+id/imageView4" />
+            tools:ignore="ContentDescription,UnknownIdInLayout" />
 
         <ImageButton
             android:id="@+id/iB"
             android:layout_width="75dp"
             android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView2"
             android:layout_marginStart="34dp"
             android:layout_marginTop="24dp"
             android:contentDescription=""
             android:onClick="onClick"
             app:srcCompat="@drawable/config"
-            tools:ignore="ContentDescription"
-            android:layout_below="@+id/imageView2"
-            android:layout_alignParentStart="true" />
+            tools:ignore="ContentDescription" />
 
         <ListView
             android:layout_width="match_parent"
@@ -74,8 +65,17 @@
             android:layout_marginTop="30dp"
             android:background="@android:color/white" />
 
-    </RelativeLayout>
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:background="#f5f5f5f5"
+            android:onClick="onClick"
+            android:text="@string/date" />
 
+    </RelativeLayout>
 
 
 </android.support.constraint.ConstraintLayout>

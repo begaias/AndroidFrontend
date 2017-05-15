@@ -7,10 +7,10 @@
     tools:context="com.example.beka.loggin.Settings">
 
     <RelativeLayout
-        android:layout_width="407dp"
-        android:layout_height="603dp"
+        android:layout_width="410dp"
+        android:layout_height="601dp"
         android:layout_marginBottom="8dp"
-        android:layout_marginRight="2dp"
+        android:layout_marginRight="1dp"
         android:layout_marginTop="0dp"
         android:background="@android:color/darker_gray"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,19 +23,21 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="100dp"
-            android:layout_alignParentTop="true"
             android:contentDescription=""
             android:scaleType="matrix"
             app:srcCompat="@drawable/menu"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
 
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/textView"
+            android:text="@string/onParameter"
             android:layout_below="@+id/textView"
-            android:text="@string/onParameter" />
+            android:layout_toStartOf="@+id/textClock"
+            android:layout_marginEnd="16dp" />
 
         <RadioButton
             android:id="@+id/radioButton2"
@@ -73,11 +75,12 @@
             android:id="@+id/imageIkon"
             android:layout_width="95dp"
             android:layout_height="95dp"
-            android:layout_alignBottom="@+id/imageView"
-            android:layout_toStartOf="@+id/textView"
             android:contentDescription=""
             app:srcCompat="@drawable/gory"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription"
+            android:layout_marginStart="11dp"
+            android:layout_alignBottom="@+id/imageView"
+            android:layout_alignParentStart="true" />
 
         <TextView
             android:id="@+id/textView2"

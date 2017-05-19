@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class Main2Activity extends AppCompatActivity implements View.OnClickListener{
 
@@ -14,17 +15,23 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        ImageButton imageButton = (ImageButton) findViewById(R.id.iB);
-        imageButton.setOnClickListener(this);
+        ImageView imageView = (ImageView) findViewById(R.id.setting);
+        imageView.setOnClickListener(this);
+        //ImageButton imageButton = (ImageButton) findViewById(R.id.dateBtn);
+        //imageButton.setOnClickListener(this);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.iB:
-                Intent intent = new Intent(Main2Activity.this, Settings.class);
-                startActivity(intent);
+            case R.id.setting:
+                Intent intent2 = new Intent(Main2Activity.this, Settings.class);
+                startActivity(intent2);
                 break;
+                case R.id.dateBtn:
+                   Intent intent1 = new Intent(Main2Activity.this,calendr.class);
+                    startActivity(intent1);
+                   break;
             default:
                 break;
         }

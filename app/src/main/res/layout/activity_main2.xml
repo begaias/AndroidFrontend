@@ -4,76 +4,78 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E4E3E3"
     tools:context="com.example.beka.loggin.Main2Activity"
     tools:layout_editor_absoluteY="81dp"
     tools:layout_editor_absoluteX="0dp">
 
+
     <RelativeLayout
-        android:layout_width="415dp"
-        android:layout_height="603dp"
+        android:layout_width="361dp"
+        android:layout_height="509dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="1dp"
-        android:background="@android:color/darker_gray"
-        app:layout_constraintHorizontal_bias="0.769"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         tools:ignore="MissingConstraints,RtlHardcoded,UselessLeaf"
-        tools:layout_editor_absoluteY="0dp">
+        tools:layout_editor_absoluteY="1dp">
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/imageView"
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
+            android:layout_height="70dp"
             android:contentDescription=""
             android:scaleType="matrix"
             app:srcCompat="@drawable/menu"
-            tools:ignore="ContentDescription,MissingConstraints"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="-143dp" />
+            tools:ignore="ContentDescription"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
 
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginBottom="19dp"
+            android:background="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true" />
 
         <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="95dp"
-            android:layout_height="95dp"
-            android:layout_above="@+id/iB"
-            android:layout_alignEnd="@+id/iB"
-            android:contentDescription=""
-            app:srcCompat="@drawable/gory"
-            tools:ignore="ContentDescription,UnknownIdInLayout" />
-
-        <ImageButton
-            android:id="@+id/iB"
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:id="@+id/setting"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_above="@+id/listView"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/imageView2"
-            android:layout_marginStart="34dp"
-            android:layout_marginTop="24dp"
-            android:contentDescription=""
-            android:onClick="onClick"
+            android:layout_marginStart="9dp"
             app:srcCompat="@drawable/config"
             tools:ignore="ContentDescription" />
 
-        <ListView
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/iB"
-            android:layout_marginTop="30dp"
-            android:background="@android:color/white" />
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/setting"
+            android:layout_alignStart="@+id/setting"
+            android:layout_marginStart="9dp"
+            app:srcCompat="@drawable/gory"
+            tools:ignore="ContentDescription" />
 
         <Button
-            android:id="@+id/btnDate"
+            android:id="@+id/dateBtn"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/imageView2"
-            android:layout_centerHorizontal="true"
-            android:background="#f5f5f5f5"
+            android:layout_height="40dp"
+            android:layout_marginBottom="7dp"
+            android:layout_marginStart="30dp"
+            android:background="#76C2AF"
             android:onClick="onClick"
-            android:text="@string/date" />
+            android:text="Date"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            tools:ignore="HardcodedText"
+            android:layout_alignBottom="@+id/logo"
+            android:layout_toEndOf="@+id/logo" />
 
     </RelativeLayout>
 

@@ -16,7 +16,7 @@ public class Settings extends AppCompatActivity {
         setContentView(R.layout.activity_settings);
 
     }
-
+//    еуыештп
     public void onRadioButtonClicked(View view) {
 
         boolean checked = ((RadioButton) view).isChecked();

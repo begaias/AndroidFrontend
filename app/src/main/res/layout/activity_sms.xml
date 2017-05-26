@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="E4E3E3"
+    tools:context="com.example.beka.loggin.sms">
+
+    <RelativeLayout
+        android:layout_width="410dp"
+        android:layout_height="601dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="-1dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints,RtlHardcoded">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:contentDescription=""
+            android:scaleType="matrix"
+            app:srcCompat="@drawable/menu"
+            tools:ignore="ContentDescription"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="77dp"
+            app:srcCompat="@drawable/gory"
+            tools:ignore="ContentDescription"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <ListView
+            android:id="@+id/lvMain"
+            android:layout_width="290dp"
+            android:layout_height="260dp"
+            android:layout_below="@+id/imageView"
+            android:layout_toEndOf="@+id/logo"
+            android:layout_marginTop="78dp"
+            android:layout_alignStart="@+id/logo">
+        </ListView>
+
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

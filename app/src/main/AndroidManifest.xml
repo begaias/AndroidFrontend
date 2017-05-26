@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Main2Activity" />
         <activity android:name=".Settings" />
-        <activity android:name=".calendr"></activity>
+        <activity android:name=".calendr" />
+        <activity android:name=".sms"></activity>
     </application>
 
 </manifest>

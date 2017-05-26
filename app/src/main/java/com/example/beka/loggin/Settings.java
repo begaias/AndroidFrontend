@@ -20,7 +20,6 @@ public class Settings extends AppCompatActivity {
         RadioGroup radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
 
         radioGroup.clearCheck();
-
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
             @Override
@@ -33,7 +32,6 @@ public class Settings extends AppCompatActivity {
                     case R.id.radioButton2:
                         selection.setText("Уведомления отключены");
                         break;
-
                 }
             }
         });
